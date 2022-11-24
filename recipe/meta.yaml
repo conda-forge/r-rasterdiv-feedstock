@@ -1,4 +1,4 @@
-{% set version = '0.2-5.2' %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rasterdiv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rasterdiv/rasterdiv_{{ version }}.tar.gz
-  sha256: e3fda2b6d6bb6fce07cb17979f4875fd175dd38729ee726378cb7b587bc8dca3
+  sha256: f40c64c70863e3b80961fbaa8c8b46310b8e8cb4d639a5d0b000891be288dd05
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -49,13 +49,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rasterdiv
   license: GPL-2.0-or-later
-  summary: Providing functions to calculate indices of diversity on numerical matrices based
-    on information theory. The rationale behind the package is described in Rocchini,
-    Marcantonio and Ricotta (2017) <doi:10.1016/j.ecolind.2016.07.039> and Rocchini,
-    Marcantonio,..., Ricotta (2021) <doi:10.1101/2021.01.23.427872>.
+  summary: Providing functions to calculate indices of diversity on numerical matrices based on information theory. The rationale behind the package is described in Rocchini, Marcantonio and Ricotta (2017) <doi:10.1016/j.ecolind.2016.07.039> and Rocchini, Marcantonio,..., Ricotta (2021) <doi:10.1101/2021.01.23.427872>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
