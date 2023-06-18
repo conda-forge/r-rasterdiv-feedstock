@@ -1,11 +1,11 @@
-About r-rasterdiv
-=================
+About r-rasterdiv-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rasterdiv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=rasterdiv
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rasterdiv-feedstock/blob/main/LICENSE.txt)
 
 Summary: Providing functions to calculate indices of diversity on numerical matrices based on information theory. The rationale behind the package is described in Rocchini, Marcantonio and Ricotta (2017) <doi:10.1016/j.ecolind.2016.07.039> and Rocchini, Marcantonio,..., Ricotta (2021) <doi:10.1101/2021.01.23.427872>.
 
