@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rasterdiv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rasterdiv/rasterdiv_{{ version }}.tar.gz
-  sha256: f40c64c70863e3b80961fbaa8c8b46310b8e8cb4d639a5d0b000891be288dd05
+  sha256: ffa6fd4cb5121721c26818775c9312a7d539345995e26dd13a69796faaee09df
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
