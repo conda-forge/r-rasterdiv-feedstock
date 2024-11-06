@@ -1,4 +1,4 @@
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rasterdiv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rasterdiv/rasterdiv_{{ version }}.tar.gz
-  sha256: ba6e0b60c668d16036bb62b7d527a76b2763e916d8fa930d2db199db4f1951ba
+  sha256: 9f3a4bb3f437e8b5b34a579942795e2fddf90e19ab088ee26ca07ad05d87af65
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
